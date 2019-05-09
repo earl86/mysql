@@ -1,1 +1,1 @@
-/root/mysqlpcap -l 10.17.4.15|awk '{ if($3 > 0 ) {$1=""; print $0 } }'| grep player_activity_ranking_history|grep SELECT
+/root/mysqlpcap -l yourip|awk '{ if($3 > 0 ) {$1=""; print $0 } }'| grep player_activity_ranking_history|grep SELECT
